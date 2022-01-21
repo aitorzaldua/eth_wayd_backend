@@ -11,7 +11,6 @@ contract HiTellMe {
     //Inizialized
     constructor() {
         console.log ("Hi mate, how are you doing? I am: %s", msg.sender);
-        console.log ("%s people said hi to me", TotalHis);
     }
 
     //Functions
@@ -22,7 +21,8 @@ contract HiTellMe {
     }
 
     function sumHis() public view returns (uint256) {
-        
+        console.log ("%s people said hi to me", TotalHis);
+        return TotalHis;
 
     }
 }
